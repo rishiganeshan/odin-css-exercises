@@ -2,28 +2,89 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+.card-container {
+  display:flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  flex-grow: 1;
+  /* gap: 15px; */
+  padding: 20px
+
+}
+
+.middle-container,
+.footer,
 .header {
-  height: 72px;
+  display: flex;
+}
+
+.middle-container {
+  flex-grow: 1;
+}
+
+
+.header {
+  flex-basis: 72px;
+  flex-shrink: 0;
   background: darkmagenta;
   color: white;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: bold;
+  padding-left: 20px;
 }
 
 .footer {
-  height: 72px;
+  flex-basis: 72px;
   background: #eee;
   color: darkmagenta;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar {
-  width: 300px;
+  display: flex;
+ 
+  flex-basis: 300px;
   background: royalblue;
   box-sizing: border-box;
+  font-size: large;
+  flex-shrink: 0;
+
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  list-style-type: none;
+  text-align: left;
+  padding-left: 10px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+
+
 }
 
+
 .card {
+  display: flex;
+
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  flex-basis: 300px;
+  /* height: 300px; */
+  /* flex-shrink: 1; */
+  padding: 10px;
+  margin: 20px;
+  
+
 }
