@@ -7,6 +7,27 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.header,
+.left-links,
+.footer,
+.right-links,
+.content,
+.input,
+.buttons,
+img {
+  display: flex;
+}
+
+.header,
+.footer {
+  justify-content: space-between;
+}
+
+.content {
+  flex-direction: column;
+  align-items: center;
+}
+
 img {
   width: 600px;
 }
